@@ -24,7 +24,7 @@ options.headless = False
 urlpage = 'https://groceries.asda.com/search/yogurt'
 print(urlpage)
 # run firefox webdriver from executable path of your choice
-driver = webdriver.Firefox(firefox_options=options, executable_path='/Users/chandlercheung/Documents/Projects/geckodriver')
+driver = webdriver.Firefox(options=options, executable_path='/Users/chandlercheung/Documents/Projects/geckodriver')
 
 # get web page
 driver.get(urlpage)
